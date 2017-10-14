@@ -16,11 +16,8 @@ def check_last_situation():
     # After other two classes are created, they'll be put here in a corresponding logic
     # As if there is a new change in the system, so that at the end the appearance
     # is changed
-    check_diff = cd.CheckDifferences()
-    table = check_diff.read_file()
-    flight_objects = check_diff.parse_read_data(table)
 
-    return flight_objects.__str__()
+    pass
 
 
 @app.route('/')
