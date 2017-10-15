@@ -28,7 +28,6 @@ class ProvideLatestSituation:
         return after_emergency_listed_flights
 
     def get_all_flights_ordered(self, ordered_ids):
-
         list_of_flights_ordered_after_emergency = []
         for sorted_flight_id in ordered_ids:
             for unsorted_flight in self.list_of_flights:
@@ -44,16 +43,24 @@ class ProvideLatestSituation:
         return uids
 
     def jsonify_flights(self, flights: list):
-        flights_json = []
         jsonified_flights = {}
+        flights_json = self._generate_flights_to_jsonify(flights)
+        jsonified_flights['flights'] = flights_json
+        jsonified_flights = json.dumps(jsonified_flights)
+        return jsonified_flights
+
+    def _get_flight_status(self, flight):
         conflicting_flights = self.conflicting_uids()
+        if flight.get_flight_number().value in conflicting_flights:
+            status = 'emergency'
+        else:
+            status = 'normal'
+        return status
+
+    def _generate_flights_to_jsonify(self, flights):
+        flights_json = []
         for flight in flights:
-
-            if flight.get_flight_number().value in conflicting_flights:
-                 status = 'emergency'
-            else:
-                status = 'normal'
-
+            status = self._get_flight_status(flight)
             data_flight = {'flight_number': flight.get_flight_number().value,
                            'day_of_origin': flight.get_day_of_origin().value,
                            'dep_ap_schedule': flight.get_dep_ap_schedule().value,
@@ -67,9 +74,7 @@ class ProvideLatestSituation:
             to_make_json_flight = {'situation': status,
                                    'flight': data_flight}
             flights_json.append(to_make_json_flight)
-        jsonified_flights['flights'] = flights_json
-        jsonified_flights = json.dumps(jsonified_flights)
-        return jsonified_flights
+        return flights_json
 
     # only with this method, the whole class can be used practically
     def provide_lat_sit(self):

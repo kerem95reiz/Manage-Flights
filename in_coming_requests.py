@@ -1,5 +1,4 @@
 from flask import Flask
-import CheckDifferences as cd
 from ProvideLatestSituation import ProvideLatestSituation as prolasit
 import json
 app = Flask(__name__)

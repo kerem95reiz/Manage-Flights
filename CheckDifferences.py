@@ -9,7 +9,6 @@ class CheckDifferences:
 
     def read_file(self):
         flight_table = excel.open_workbook('./source/DEMO_FLIGHTPLAN.xlsx')
-
         sheet = flight_table.sheets().__getitem__(0)
         number_of_cols = sheet.row_values(0).__len__()
         number_of_rows = sheet.col_values(0).__len__()
