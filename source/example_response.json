@@ -1,0 +1,126 @@
+{"flights": [
+{
+	"situation": "emergency",
+	"flight": {
+		"flight_number": 1750,
+		"day_of_origin": "14.10.17",
+		"dep_ap_schedule": "OSL",
+		"dep_day": "14.10.17",
+		"dep_time": "0700",
+		"arr_ap_schedule": "BCN",
+		"arr_day": "14.10.17",
+		"arr_time": 1020,
+		"arr_day_schedule": "14.10.17",
+		"ac_schedule": "BBxxx",
+		"related_flights": [
+			{
+				"flight_number": 1751,
+				"day_of_origin": "14.10.17",
+				"dep_ap_schedule": "OSL",
+				"dep_day": "14.10.17",
+				"dep_time": "0700",
+				"arr_ap_schedule": "BCN",
+				"arr_day": "14.10.17",
+				"arr_time": 1050,
+				"arr_day_schedule": "14.10.17",
+				"ac_schedule": "BCxxx"
+			},
+			{
+				"flight_number": 1755,
+				"day_of_origin": "14.10.17",
+				"dep_ap_schedule": "OSL",
+				"dep_day": "14.10.17",
+				"dep_time": "0700",
+				"arr_ap_schedule": "BCN",
+				"arr_day": "14.10.17",
+				"arr_time": 1025,
+				"arr_day_schedule": "14.10.17",
+				"ac_schedule": "ABxxx"
+			}
+		]
+	}
+},
+{
+	"situation": "emergency",
+	"flight": {
+		"flight_number": 1750,
+		"day_of_origin": "14.10.17",
+		"dep_ap_schedule": "OSL",
+		"dep_day": "14.10.17",
+		"dep_time": "0700",
+		"arr_ap_schedule": "BCN",
+		"arr_day": "14.10.17",
+		"arr_time": 1020,
+		"arr_day_schedule": "14.10.17",
+		"ac_schedule": "BBxxx",
+		"related_flights": [
+			{
+				"flight_number": 1751,
+				"day_of_origin": "14.10.17",
+				"dep_ap_schedule": "OSL",
+				"dep_day": "14.10.17",
+				"dep_time": "0700",
+				"arr_ap_schedule": "BCN",
+				"arr_day": "14.10.17",
+				"arr_time": 1050,
+				"arr_day_schedule": "14.10.17",
+				"ac_schedule": "BCxxx"
+			},
+			{
+				"flight_number": 1755,
+				"day_of_origin": "14.10.17",
+				"dep_ap_schedule": "OSL",
+				"dep_day": "14.10.17",
+				"dep_time": "0700",
+				"arr_ap_schedule": "BCN",
+				"arr_day": "14.10.17",
+				"arr_time": 1025,
+				"arr_day_schedule": "14.10.17",
+				"ac_schedule": "ABxxx"
+			}
+		]
+	}
+},
+{
+	"situation": "emergency",
+	"flight": {
+		"flight_number": 1750,
+		"day_of_origin": "14.10.17",
+		"dep_ap_schedule": "OSL",
+		"dep_day": "14.10.17",
+		"dep_time": "0700",
+		"arr_ap_schedule": "BCN",
+		"arr_day": "14.10.17",
+		"arr_time": 1020,
+		"arr_day_schedule": "14.10.17",
+		"ac_schedule": "BBxxx",
+		"related_flights": [
+			{
+				"flight_number": 1751,
+				"day_of_origin": "14.10.17",
+				"dep_ap_schedule": "OSL",
+				"dep_day": "14.10.17",
+				"dep_time": "0700",
+				"arr_ap_schedule": "BCN",
+				"arr_day": "14.10.17",
+				"arr_time": 1050,
+				"arr_day_schedule": "14.10.17",
+				"ac_schedule": "BCxxx"
+			},
+			{
+				"flight_number": 1755,
+				"day_of_origin": "14.10.17",
+				"dep_ap_schedule": "OSL",
+				"dep_day": "14.10.17",
+				"dep_time": "0700",
+				"arr_ap_schedule": "BCN",
+				"arr_day": "14.10.17",
+				"arr_time": 1025,
+				"arr_day_schedule": "14.10.17",
+				"ac_schedule": "ABxxx"
+			}
+		]
+	}
+}
+]
+}

@@ -1,7 +1,7 @@
 from flask import Flask
-import requests as req
-import FindAndSendFlightWithProblem as fas
 import CheckDifferences as cd
+from ProvideLatestSituation import ProvideLatestSituation as prolasit
+import json
 app = Flask(__name__)
 
 """
@@ -12,18 +12,22 @@ incoming and outgoing requests will be processed here
 
 @app.route('/check')
 def check_last_situation():
+    provide_sit = prolasit()
+    return provide_sit.provide_lat_sit()
 
-    # After other two classes are created, they'll be put here in a corresponding logic
-    # As if there is a new change in the system, so that at the end the appearance
-    # is changed
 
-    pass
+@app.route('/test')
+def test_response():
+
+    with open('./source/example_response.json') as data_file:
+        response = json.load(data_file)
+
+    print(response)
+    return response.__str__()
 
 
 @app.route('/')
 def main_page():
-
-    cd.CheckDifferences().read_file()
 
     return "Here is the main page!!!"
 
